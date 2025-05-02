@@ -17,7 +17,7 @@
             <th>Instructor</th>
             <th>Action</th>
         </tr>
-        <%-- Will be populated by DashboardServlet --%>
+        
         <c:forEach items="${courses}" var="course">
             <tr>
                 <td>${course.id}</td>
@@ -30,7 +30,7 @@
 
     <h2>Your Enrolled Courses</h2>
     <ul>
-        <%-- Will display enrolled courses from session --%>
+        
         <c:forEach items="${enrolledCourses}" var="course">
             <li>${course.name} (${course.id})</li>
         </c:forEach>
