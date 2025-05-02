@@ -23,7 +23,7 @@ public class LoginServlet extends HttpServlet {
         }
     }
 
-    // Optional: handle GET too, to prevent 405 if accessed directly
+    
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.sendRedirect("login.html");
